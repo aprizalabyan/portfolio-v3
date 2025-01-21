@@ -43,3 +43,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #e2e8f0;
 }
+
+.active .nav-indicator {
+  width: 4rem;
+  opacity: 1;
+}
+
+.active .nav-text {
+  color: var(--text-base);
+  opacity: 1;
+}
