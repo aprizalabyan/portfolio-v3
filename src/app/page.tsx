@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import SplineWidget from "@/components/widget/SplineWidget"
 
 export default function Home() {
   const navList = [
@@ -51,7 +52,7 @@ export default function Home() {
   return (
     <div className="home-wrapper justify-items-center">
       <div className="flex gap-4 w-9/12">
-        <header className="left-section flex flex-col sticky max-h-screen top-0 py-24 w-1/2">
+        <header className="left-section flex flex-col justify-between sticky max-h-screen top-0 py-24 w-1/2">
           <div>
             <h1 className="text-4xl font-bold">Header</h1>
             <h2 className="text-xl font-medium mt-3">Subheader</h2>
@@ -70,6 +71,9 @@ export default function Home() {
                 })}
               </ul>
             </nav>
+          </div>
+          <div>
+            <SplineWidget />
           </div>
         </header>
         <main className="right-section flex flex-col pt-24 w-1/2">
