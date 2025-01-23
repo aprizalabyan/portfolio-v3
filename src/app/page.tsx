@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import SplineWidget from "@/components/widget/SplineWidget"
+import axios from "axios"
 
 export default function Home() {
   const navList = [
@@ -20,6 +21,10 @@ export default function Home() {
   ]
 
   const [activeSection, setActiveSection] = useState("");
+  const [dataAbout, setDataAbout] = useState<any>({});
+  const [dataExperience, setDataExperience] = useState<any>([]);
+  const [dataExpertise, setDataExpertise] = useState<any>([]);
+  const [dataProject, setDataProject] = useState<any>([]);
 
   const clickNav = (id: string) => {
     const element = document.getElementById(id);
@@ -29,7 +34,20 @@ export default function Home() {
     }
   }
 
-  useEffect(() => {
+  const getDataContent = async () => {
+    try {
+      const res = await axios({
+        method: "GET",
+        url: "/api/content/all-data"
+      })
+      setDataAbout(res.data.data.about)
+      setDataExperience(res.data.data.experience)
+      setDataExpertise(res.data.data.expertise)
+      setDataProject(res.data.data.project)
+    } catch (error) { }
+  }
+
+  const intersectObv = () => {
     const sections = document.querySelectorAll("section");
     const observer = new IntersectionObserver(
       (entries) => {
@@ -47,6 +65,11 @@ export default function Home() {
     return () => {
       sections.forEach((section) => observer.unobserve(section));
     };
+  }
+
+  useEffect(() => {
+    intersectObv();
+    getDataContent();
   }, []);
 
   return (
@@ -54,9 +77,9 @@ export default function Home() {
       <div className="flex gap-4 w-9/12">
         <header className="left-section flex flex-col justify-between sticky max-h-screen top-0 py-24 w-1/2">
           <div>
-            <h1 className="text-4xl font-bold">Header</h1>
-            <h2 className="text-xl font-medium mt-3">Subheader</h2>
-            <p className="text-secondary-text mt-4">Description</p>
+            <h1 className="text-4xl font-bold">{dataAbout.header}</h1>
+            <h2 className="text-xl font-medium mt-3">{dataAbout.subheader}</h2>
+            <p className="text-base text-secondary-text mt-4">{dataAbout.description}</p>
             <nav className="nav-container mt-16 w-max">
               <ul>
                 {navList.map((item, index) => {
@@ -77,20 +100,58 @@ export default function Home() {
           </div>
         </header>
         <main className="right-section flex flex-col pt-24 w-1/2">
-          <section id="about" className="border-2 mb-24">
-            About
-            <div className="h-96">content</div>
-            <div className="h-40">content</div>
+          <section id="about" className="flex flex-col gap-16 mb-28">
+            <div className="text-base text-secondary-text">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus fermentum nunc sed tristique. In vitae nibh interdum tellus luctus efficitur. Vivamus sit amet molestie quam. Pellentesque non dui porta, dignissim velit nec, scelerisque massa.</span>
+            </div>
+            <div className="grid grid-cols-4">
+              <div className="col-span-1 flex">
+                <span className="text-base text-secondary-text">Expertise</span>
+              </div>
+              <div className="col-span-3 flex flex-col gap-3">
+                {dataExpertise.map((item: any) => (
+                  <div key={item._id} className="flex flex-col gap-1">
+                    <span className="text-base text-primary-text">{item.category}</span>
+                    <div>
+                      {item.sub_category.map((sub: any, i: number) => (
+                        <div key={i} className="grid grid-cols-2 text-sm text-secondary-text">
+                          <span>{sub.name}</span>
+                          <span>{sub.value}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </section>
-          <section id="experiences" className="border-2 mb-24">
-            Experiences
+          <section id="experiences" className="flex flex-col gap-10 mb-24">
+            {dataExperience.map((item: any) => (
+              <div key={item._id} className="grid grid-cols-4">
+                <div className="col-span-1 flex">
+                  <span className="text-base text-secondary-text">{item.year}</span>
+                </div>
+                <div className="col-span-3 flex flex-col gap-3">
+                  <span className="text-base text-primary-text">{item.company}</span>
+                  <span className="text-sm text-secondary-text">{item.description}</span>
+                </div>
+              </div>
+            ))}
             <div className="h-96">content</div>
-            <div className="h-40">content</div>
           </section>
-          <section id="projects" className="border-2 mb-24">
-            Projects
+          <section id="projects" className="flex flex-col gap-8 mb-24">
+            {dataProject.map((item: any) => (
+              <div key={item._id} className="grid grid-cols-4 p-4">
+                <div className="col-span-1 flex">
+                  <img src={item.image} alt="img" height={80} width={80} />
+                </div>
+                <div className="col-span-3 flex flex-col gap-3">
+                  <span className="text-base text-primary-text">{item.title}</span>
+                  <span className="text-sm text-secondary-text">{item.description}</span>
+                </div>
+              </div>
+            ))}
             <div className="h-96">content</div>
-            <div className="h-40">content</div>
           </section>
         </main>
       </div>
