@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import SplineWidget from "@/components/widget/SplineWidget"
 import { ProgressBar } from "primereact/progressbar"
+import { Chip } from "primereact/chip";
 import axios from "axios"
 
 export default function Home() {
@@ -143,9 +144,23 @@ export default function Home() {
                 <div className="col-span-3 flex flex-col gap-3">
                   <span className="text-base text-primary-text">{item.company}</span>
                   <span className="text-sm text-secondary-text">{item.description}</span>
+                  <div className="flex gap-2">
+                    {item.tags.map((tag: any, i: number) => (
+                      <Chip
+                        key={i}
+                        label={tag}
+                        pt={{ label: { className: "text-xs text-accent-blue" } }}
+                        className="bg-gradient-1 rounded-full px-3 py-1"
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
+            <div className="flex items-center gap-2 text-base cursor-pointer text-primary-text hover:text-secondary-text w-fit">
+              <span className="">View Full Resume</span>
+              <i className="pi pi-arrow-up-right"></i>
+            </div>
             <div className="h-96">content</div>
           </section>
           <section id="projects" className="flex flex-col gap-8 mb-24">

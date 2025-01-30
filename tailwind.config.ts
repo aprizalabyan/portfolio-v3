@@ -12,6 +12,8 @@ export default {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-1":
+          "linear-gradient(120deg, rgba(84, 150, 182, 0.25) 0%, rgba(15, 107, 151, 0.25) 100%)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
