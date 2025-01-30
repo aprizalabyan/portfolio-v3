@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import SplineWidget from "@/components/widget/SplineWidget"
+import { ProgressBar } from "primereact/progressbar"
 import axios from "axios"
 
 export default function Home() {
@@ -114,9 +115,16 @@ export default function Home() {
                     <span className="text-base text-primary-text">{item.category}</span>
                     <div>
                       {item.sub_category.map((sub: any, i: number) => (
-                        <div key={i} className="grid grid-cols-2 text-sm text-secondary-text">
+                        <div key={i} className="grid grid-cols-2 items-center text-sm text-secondary-text">
                           <span>{sub.name}</span>
-                          <span>{sub.value}</span>
+                          <div className="w-full">
+                            <ProgressBar
+                              showValue={false}
+                              value={sub.value}
+                              pt={{ value: { className: "bg-accent-blue" } }}
+                              className="h-1.5 bg-primary-text rounded-full"
+                            />
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -126,6 +134,7 @@ export default function Home() {
             </div>
           </section>
           <section id="experiences" className="flex flex-col gap-10 mb-24">
+            <span className="text-base text-secondary-text">Experiences</span>
             {dataExperience.map((item: any) => (
               <div key={item._id} className="grid grid-cols-4">
                 <div className="col-span-1 flex">
