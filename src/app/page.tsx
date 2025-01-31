@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import SplineWidget from "@/components/widget/SplineWidget"
+import Navigation from "@/components/base/navigation"
 import { ProgressBar } from "primereact/progressbar"
 import { Chip } from "primereact/chip";
 import axios from "axios"
@@ -82,20 +83,11 @@ export default function Home() {
             <h1 className="text-4xl font-bold">{dataAbout.header}</h1>
             <h2 className="text-xl font-medium mt-3">{dataAbout.subheader}</h2>
             <p className="text-base text-secondary-text mt-4">{dataAbout.description}</p>
-            <nav className="nav-container mt-16 w-max">
-              <ul>
-                {navList.map((item, index) => {
-                  return (
-                    <li key={index} onClick={() => clickNav(item.id)}>
-                      <div className={`group flex items-center py-3 cursor-pointer ${activeSection == item.id ? "active" : ""}`}>
-                        <span className="nav-indicator bg-white h-px w-8 mr-4 group-hover:w-16 opacity-50 group-hover:opacity-100 transition-all"></span>
-                        <span className="nav-text text-sm text-secondary-text group-hover:text-primary-text transition-all">{item.title}</span>
-                      </div>
-                    </li>
-                  )
-                })}
-              </ul>
-            </nav>
+            <Navigation
+              navList={navList}
+              activeSection={activeSection}
+              clickNav={(e) => clickNav(e)}
+            />
           </div>
           <div>
             <SplineWidget />
