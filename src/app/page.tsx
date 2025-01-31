@@ -164,17 +164,35 @@ export default function Home() {
             <div className="h-96">content</div>
           </section>
           <section id="projects" className="flex flex-col gap-8 mb-24">
+            <span className="text-base text-secondary-text">Projects</span>
             {dataProject.map((item: any) => (
-              <div key={item._id} className="grid grid-cols-4 p-4">
+              <div key={item._id} className="grid grid-cols-4 p-4 hover:bg-hover rounded-md">
                 <div className="col-span-1 flex">
-                  <img src={item.image} alt="img" height={80} width={80} />
+                  <img src={item.image} alt="img" className="w-[100px] h-[100px] object-cover" />
                 </div>
                 <div className="col-span-3 flex flex-col gap-3">
-                  <span className="text-base text-primary-text">{item.title}</span>
+                  <span className="text-base text-primary-text hover:text-accent-blue cursor-pointer w-fit">
+                    {item.title}
+                    <i className="pi pi-arrow-up-right ms-2"></i>
+                  </span>
                   <span className="text-sm text-secondary-text">{item.description}</span>
+                  <div className="flex gap-2">
+                    {item.tags.map((tag: any, i: number) => (
+                      <Chip
+                        key={i}
+                        label={tag}
+                        pt={{ label: { className: "text-xs text-accent-blue" } }}
+                        className="bg-gradient-1 rounded-full px-3 py-1"
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
+            <div className="flex items-center gap-2 text-base cursor-pointer text-primary-text hover:text-secondary-text w-fit">
+              <span className="">View All Project</span>
+              <i className="pi pi-arrow-up-right"></i>
+            </div>
             <div className="h-96">content</div>
           </section>
         </main>
