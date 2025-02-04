@@ -61,3 +61,19 @@ body {
     background-color: var(--tw-color, theme("colors.dark-lighten-2"));
   }
 }
+
+.footer {
+  span {
+    font-size: 14px;
+    color: var(--tw-color, theme("colors.secondary-darken-text"));
+    
+    a {
+      color: var(--tw-color, theme("colors.secondary-text"));
+      font-weight: 600;
+      
+      &:hover {
+        color: var(--tw-color, theme("colors.accent-blue"));
+      }
+    }
+  }
+}

@@ -87,7 +87,7 @@ export default function Home() {
 
   return (
     <div className="home-wrapper justify-items-center">
-      <div className="flex gap-4 w-9/12">
+      <div className="flex gap-4 w-3/5">
         <header className="left-section flex flex-col justify-between sticky max-h-screen top-0 py-24 w-1/2">
           <div>
             {loading ?
@@ -220,6 +220,14 @@ export default function Home() {
               <span className="">View All Project</span>
               <i className="pi pi-arrow-up-right"></i>
             </div>
+          </section>
+          <section id="footer" className="footer flex flex-col gap-8 mb-24 w-3/4">
+            <span>
+              Interactive 3D designed with <a href="https://spline.design">Spline</a>. 
+              Built with <a href="https://nextjs.org">Next.js</a> and <a href="https://tailwindcss.com">Tailwind CSS</a>, 
+              UI component with <a href="https://primereact.org">PrimeReact</a>, and 
+              deployed with <a href="https://pages.github.com">Github Pages</a>. All text uses <a href="https://rsms.me/inter/">Inter</a> fontface.
+            </span>
           </section>
         </main>
       </div>
