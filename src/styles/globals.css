@@ -53,3 +53,11 @@ body {
   color: var(--text-base);
   opacity: 1;
 }
+
+.p-skeleton {
+  background-color: var(--tw-color, theme("colors.dark-lighten-1"));
+  &::after {
+    content: "";
+    background-color: var(--tw-color, theme("colors.dark-lighten-2"));
+  }
+}
