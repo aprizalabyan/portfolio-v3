@@ -23,7 +23,7 @@ export default function LoaderExpertise() {
 
   return (
     <DataTable value={[...Array(4)]}>
-      <Column field="year" header="Year" style={{ width: "80px" }} className="text-sm text-secondary-text" body={<Skeleton width="80%" height="10px" borderRadius="16px" />} />
+      <Column field="year" header="Year" style={{ width: "60px" }} className="text-sm text-secondary-text" body={<Skeleton width="80%" height="10px" borderRadius="16px" />} />
       <Column field="title" header="Project" body={titleTemp} />
       <Column field="tags" header="Tags" body={tagsTemp} />
       <Column field="url" header="Link" body={<Skeleton width="80%" height="10px" borderRadius="16px" />} />

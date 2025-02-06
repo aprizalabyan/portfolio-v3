@@ -69,14 +69,16 @@ body {
         font-size: 14px;
       }
 
-      tr {
-        border-bottom: 1px solid
-          var(--tw-color, theme("colors.secondary-darken-text"));
-      }
-
       td,
       th {
-        padding: 8px 0;
+        padding: 12px 0;
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid
+            var(--tw-color, theme("colors.dark-lighten-2"));
+        }
       }
     }
   }

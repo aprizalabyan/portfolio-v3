@@ -50,7 +50,7 @@ export default function Project() {
   }
 
   const tagBodyTemplate = (item: any) => {
-    return <div className="flex gap-2">
+    return <div className="flex flex-wrap gap-1.5">
       {item.tags.map((tag: any, i: number) => (
         <Chip
           key={i}
@@ -68,14 +68,16 @@ export default function Project() {
       className="flex items-end text-sm text-secondary-text hover:text-accent-blue group/link"
       target="_blank"
     >
-      <span>{item.url}</span>
-      <i className="text-xs pi pi-arrow-up-right ml-1 mb-0.5 transition-transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1"></i>
+      <span>
+        {item.url}
+        <i className="text-xs pi pi-arrow-up-right ml-1 mb-0.5 transition-transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1"></i>
+      </span>
     </a>
   }
 
   return (
     <div className="project-wrapper justify-items-center">
-      <div className="flex flex-col py-24 gap-4 w-3/5">
+      <div className="flex flex-col gap-4 py-24 px-6 md:px-12 min-h-screen max-w-screen-xl mx-auto">
         <div
           className="flex items-center gap-2 text-sm cursor-pointer text-accent-blue hover:text-accent-blue-darken-1 w-fit group/link"
           onClick={() => router.push("/")}
@@ -87,8 +89,8 @@ export default function Project() {
         {loading ?
           <LoaderTable /> :
           <DataTable value={dataProject.data}>
-            <Column field="year" header="Year" style={{ width: "80px" }} className="text-sm text-secondary-text" />
-            <Column field="title" header="Project" body={titleBodyTemplate} />
+            <Column field="year" header="Year" style={{ width: "60px" }} className="text-sm text-secondary-text" />
+            <Column field="title" header="Project" body={titleBodyTemplate} style={{ width: "40%" }} />
             <Column field="tags" header="Tags" body={tagBodyTemplate} />
             <Column field="url" header="Link" body={linkBodyTemplate} />
           </DataTable>
