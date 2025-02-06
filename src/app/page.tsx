@@ -27,6 +27,28 @@ export default function Home() {
       title: "Projects",
     },
   ]
+  const contactList = [
+    {
+      type: "github",
+      url: "https://github.com/aprizalabyan",
+      icon: "pi-github"
+    },
+    {
+      type: "linkedin",
+      url: "https://www.linkedin.com/in/muhammad-aprizal-abyan-598012268/",
+      icon: "pi-linkedin"
+    },
+    {
+      type: "instagram",
+      url: "https://www.instagram.com/aprzla_/",
+      icon: "pi-instagram"
+    },
+    {
+      type: "mail",
+      url: "mailto:aprizalabyan@gmail.com",
+      icon: "pi-envelope"
+    },
+  ]
 
   const [activeSection, setActiveSection] = useState("");
   const [dataAbout, setDataAbout] = useState<any>({});
@@ -65,6 +87,7 @@ export default function Home() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          if (entry.target.id == "footer") return;
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           }
@@ -106,6 +129,13 @@ export default function Home() {
           </div>
           <div>
             <SplineWidget />
+            <div className="flex gap-5">
+              {contactList.map((item, i) => (
+                <a href={item.url} target="_blank" className="text-xl" key={i}>
+                  <i className={"pi " + item.icon}></i>
+                </a>
+              ))}
+            </div>
           </div>
         </header>
         <main className="right-section flex flex-col pt-24 w-1/2">
