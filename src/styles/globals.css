@@ -62,15 +62,35 @@ body {
   }
 }
 
+.p-datatable {
+  .p-datatable-wrapper {
+    table {
+      th {
+        font-size: 14px;
+      }
+
+      tr {
+        border-bottom: 1px solid
+          var(--tw-color, theme("colors.secondary-darken-text"));
+      }
+
+      td,
+      th {
+        padding: 8px 0;
+      }
+    }
+  }
+}
+
 .footer {
   span {
     font-size: 14px;
     color: var(--tw-color, theme("colors.secondary-darken-text"));
-    
+
     a {
       color: var(--tw-color, theme("colors.secondary-text"));
       font-weight: 600;
-      
+
       &:hover {
         color: var(--tw-color, theme("colors.accent-blue"));
       }

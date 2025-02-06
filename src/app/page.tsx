@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import SplineWidget from "@/components/widget/SplineWidget"
 import Navigation from "@/components/base/navigation"
 import LoaderExpertise from "@/components/base/loader/Expertise"
@@ -9,10 +10,11 @@ import LoaderProject from "@/components/base/loader/Project"
 import LoaderHeader from "@/components/base/loader/Header"
 import LoaderParagraph from "@/components/base/loader/Paragraph"
 import { ProgressBar } from "primereact/progressbar"
-import { Chip } from "primereact/chip";
+import { Chip } from "primereact/chip"
 import axios from "axios"
 
 export default function Home() {
+  const router = useRouter()
   const navList = [
     {
       id: "about",
@@ -246,9 +248,12 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-            <div className="flex items-center gap-2 text-base cursor-pointer text-primary-text hover:text-secondary-text w-fit">
-              <span className="">View All Project</span>
-              <i className="pi pi-arrow-up-right"></i>
+            <div
+              className="flex items-center gap-2 text-base cursor-pointer text-primary-text w-fit group transition"
+              onClick={() => router.push("/project")}
+            >
+              <span className="border-b border-transparent hover:border-accent-blue">View All Project</span>
+              <i className="text-xs pi pi-arrow-right group-hover:translate-x-1 transition-transform"></i>
             </div>
           </section>
           <section id="footer" className="footer flex flex-col gap-8 mb-24 w-3/4">
