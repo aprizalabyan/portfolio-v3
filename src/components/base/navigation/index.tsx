@@ -16,7 +16,7 @@ interface Props {
 export default function Navigation({ navList, activeSection, clickNav }: Props) {
   return (
     <div>
-      <nav className="nav-container mt-16 w-max">
+      <nav className="nav-container hidden lg:block lg:mt-16 w-max">
         <ul>
           {navList.map((item, index) => {
             return (

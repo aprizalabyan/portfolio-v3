@@ -86,7 +86,7 @@ body {
 
 .footer {
   span {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--tw-color, theme("colors.secondary-darken-text"));
 
     a {
@@ -96,6 +96,10 @@ body {
       &:hover {
         color: var(--tw-color, theme("colors.accent-blue"));
       }
+    }
+
+    @screen sm {
+      font-size: 14px;
     }
   }
 }

@@ -112,15 +112,15 @@ export default function Home() {
 
   return (
     <div className="home-wrapper justify-items-center">
-      <div className="flex gap-4 w-3/5">
-        <header className="left-section flex flex-col justify-between sticky max-h-screen top-0 py-24 w-1/2">
+      <div className="lg:flex lg:gap-4 min-h-screen max-w-screen-xl mx-auto py-12 px-6 md:px-12 md:py-16 lg:py-0">
+        <header className="left-section lg:flex lg:flex-col lg:justify-between lg:sticky lg:max-h-screen lg:top-0 lg:py-24 lg:w-1/2">
           <div>
             {loading ?
               <LoaderHeader /> :
               <div>
-                <h1 className="text-4xl font-bold">{dataAbout.header}</h1>
-                <h2 className="text-xl font-medium mt-3">{dataAbout.subheader}</h2>
-                <p className="text-base text-secondary-text mt-4">{dataAbout.description}</p>
+                <h1 className="text-3xl sm:text-4xl font-bold">{dataAbout.header}</h1>
+                <h2 className="text-base sm:text-xl font-medium mt-3">{dataAbout.subheader}</h2>
+                <p className="text-sm sm:text-base text-secondary-text mt-4">{dataAbout.description}</p>
               </div>
             }
             <Navigation
@@ -140,9 +140,9 @@ export default function Home() {
             </div>
           </div>
         </header>
-        <main className="right-section flex flex-col pt-24 w-1/2">
-          <section id="about" className="flex flex-col gap-16 mb-28">
-            <div className="text-base text-secondary-text">
+        <main className="right-section flex flex-col pt-24 lg:w-1/2">
+          <section id="about" className="flex flex-col gap-16 mb-16 sm:mb-28">
+            <div className="text-sm sm:text-base text-secondary-text">
               {loading ?
                 <LoaderParagraph /> :
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus fermentum nunc sed tristique. In vitae nibh interdum tellus luctus efficitur. Vivamus sit amet molestie quam. Pellentesque non dui porta, dignissim velit nec, scelerisque massa.</span>
@@ -150,7 +150,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-4">
               <div className="col-span-1 flex">
-                <span className="text-base text-secondary-text">Expertise</span>
+                <span className="text-sm sm:text-base text-secondary-text">Expertise</span>
               </div>
               <div className="col-span-3 flex flex-col gap-3">
                 {loading ?
@@ -161,10 +161,10 @@ export default function Home() {
                   </div> :
                   dataExpertise.map((item: any) => (
                     <div key={item._id} className="flex flex-col gap-1">
-                      <span className="text-base text-primary-text">{item.category}</span>
+                      <span className="text-sm sm:text-base text-primary-text">{item.category}</span>
                       <div>
                         {item.sub_category.map((sub: any, i: number) => (
-                          <div key={i} className="grid grid-cols-2 items-center text-sm text-secondary-text">
+                          <div key={i} className="grid grid-cols-2 items-center text-xs sm:text-sm text-secondary-text">
                             <span>{sub.name}</span>
                             <div className="w-full">
                               <ProgressBar
@@ -182,8 +182,8 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section id="experiences" className="flex flex-col gap-10 mb-24">
-            <span className="text-base text-secondary-text">Experiences</span>
+          <section id="experiences" className="flex flex-col gap-8 lg:gap-10 mb-16 sm:mb-28">
+            <span className="text-sm sm:text-base text-secondary-text">Experiences</span>
             {loading ?
               <div className="flex flex-col gap-2">
                 {[...Array(3)].map((_, i) => (
@@ -193,11 +193,11 @@ export default function Home() {
               dataExperience.map((item: any) => (
                 <div key={item._id} className="grid grid-cols-4">
                   <div className="col-span-1 flex">
-                    <span className="text-base text-secondary-text">{item.year}</span>
+                    <span className="text-sm sm:text-base text-secondary-text">{item.year}</span>
                   </div>
                   <div className="col-span-3 flex flex-col gap-3">
-                    <span className="text-base text-primary-text">{item.company}</span>
-                    <span className="text-sm text-secondary-text">{item.description}</span>
+                    <span className="text-sm sm:text-base text-primary-text">{item.company}</span>
+                    <span className="text-xs sm:text-sm text-secondary-text">{item.description}</span>
                     <div className="flex gap-2">
                       {item.tags.map((tag: any, i: number) => (
                         <Chip
@@ -211,56 +211,61 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-            <div className="flex items-center gap-2 text-base cursor-pointer text-primary-text hover:text-secondary-text w-fit">
-              <span className="">View Full Resume</span>
-              <i className="pi pi-arrow-up-right"></i>
-            </div>
+            <a href="#" target="_blank" className="flex items-end text-sm sm:text-base cursor-pointer text-primary-text hover:text-accent-blue w-fit group">
+              <span>
+                View Full Resume
+                <i className="pi pi-arrow-up-right ml-1 mb-0.5 text-xs transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
+              </span>
+            </a>
           </section>
-          <section id="projects" className="flex flex-col gap-8 mb-24">
-            <span className="text-base text-secondary-text">Projects</span>
+          <section id="projects" className="flex flex-col gap-6 mb-16 sm:mb-28">
+            <span className="text-sm sm:text-base text-secondary-text">Projects</span>
             {loading ?
               <div className="flex flex-col gap-2">
                 {[...Array(3)].map((_, i) => (
                   <LoaderProject key={i} />
                 ))}
               </div> :
-              dataProject.map((item: any) => (
-                <div key={item._id} className="grid grid-cols-4 p-4 hover:bg-hover rounded-md">
-                  <div className="col-span-1 flex">
-                    <img src={item.image} alt="img" className="w-[100px] h-[100px] object-cover" />
-                  </div>
-                  <div className="col-span-3 flex flex-col gap-3">
-                    <span className="text-base text-primary-text hover:text-accent-blue cursor-pointer w-fit">
-                      {item.title}
-                      <i className="pi pi-arrow-up-right ms-2"></i>
-                    </span>
-                    <span className="text-sm text-secondary-text">{item.description}</span>
-                    <div className="flex gap-2">
-                      {item.tags.map((tag: any, i: number) => (
-                        <Chip
-                          key={i}
-                          label={tag}
-                          pt={{ label: { className: "text-xs text-accent-blue" } }}
-                          className="bg-gradient-1 rounded-full px-3 py-1"
-                        />
-                      ))}
+              <div className="flex flex-col gap-12 sm:gap-4">
+                {dataProject.map((item: any) => (
+                  <div key={item._id} className="grid sm:grid-cols-4 gap-4 sm:gap-0 sm:p-4 hover:bg-hover rounded-md transition-all">
+                    <div className="sm:col-span-3 flex flex-col gap-3 sm:order-2">
+                      <a href={item.url} target="_blank" className="text-sm sm:text-base text-primary-text hover:text-accent-blue cursor-pointer w-fit group">
+                        {item.title}
+                        <i className="pi pi-arrow-up-right text-xs ml-1 mb-0.5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
+                      </a>
+                      <span className="text-xs sm:text-sm text-secondary-text">{item.description}</span>
+                      <div className="flex gap-2">
+                        {item.tags.map((tag: any, i: number) => (
+                          <Chip
+                            key={i}
+                            label={tag}
+                            pt={{ label: { className: "text-xs text-accent-blue" } }}
+                            className="bg-gradient-1 rounded-full px-3 py-1"
+                          />
+                        ))}
+                      </div>
+                    </div>
+                    <div className="sm:col-span-1 flex pr-4 sm:order-1">
+                      <img src={item.image} alt="img" className="w-[160px] sm:w-full h-[100px] object-cover rounded-md" />
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            }
             <div
-              className="flex items-center gap-2 text-base cursor-pointer text-primary-text w-fit group transition"
+              className="flex items-center gap-2 text-sm sm:text-base cursor-pointer text-primary-text w-fit group transition"
               onClick={() => router.push("/project")}
             >
               <span className="border-b border-transparent hover:border-accent-blue">View All Project</span>
               <i className="text-xs pi pi-arrow-right group-hover:translate-x-1 transition-transform"></i>
             </div>
           </section>
-          <section id="footer" className="footer flex flex-col gap-8 mb-24 w-3/4">
+          <section id="footer" className="footer flex flex-col gap-8 mb-16 sm:mb-24 sm:w-3/4">
             <span>
-              Interactive 3D designed with <a href="https://spline.design">Spline</a>. 
-              Built with <a href="https://nextjs.org">Next.js</a> and <a href="https://tailwindcss.com">Tailwind CSS</a>, 
-              UI component with <a href="https://primereact.org">PrimeReact</a>, and 
+              Interactive 3D designed with <a href="https://spline.design">Spline</a>.
+              Built with <a href="https://nextjs.org">Next.js</a> and <a href="https://tailwindcss.com">Tailwind CSS</a>,
+              UI component with <a href="https://primereact.org">PrimeReact</a>, and
               deployed with <a href="https://pages.github.com">Github Pages</a>. All text uses <a href="https://rsms.me/inter/">Inter</a> fontface.
             </span>
           </section>

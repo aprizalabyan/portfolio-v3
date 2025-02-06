@@ -11,7 +11,7 @@ export default function SplineWidget() {
   }
 
   return (
-    <div className="h-96">
+    <div className="h-96 -mx-6 mt-12 lg:mx-0 lg:mt-0">
       <Spline
         scene="https://prod.spline.design/ltpbbZTW79oVR2mI/scene.splinecode"
         onLoad={onLoadSpline}
