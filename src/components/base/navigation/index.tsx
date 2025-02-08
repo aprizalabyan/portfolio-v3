@@ -23,7 +23,7 @@ export default function Navigation({ navList, activeSection, clickNav }: Props) 
               <li key={index} onClick={() => clickNav(item.id)}>
                 <div className={`group flex items-center py-3 cursor-pointer ${activeSection == item.id ? "active" : ""}`}>
                   <span className="nav-indicator bg-white h-px w-8 mr-4 group-hover:w-16 opacity-50 group-hover:opacity-100 transition-all"></span>
-                  <span className="nav-text text-sm text-secondary-text group-hover:text-primary-text transition-all">{item.title}</span>
+                  <span className="nav-text text-xs uppercase tracking-widest text-secondary-text group-hover:text-primary-text transition-all">{item.title}</span>
                 </div>
               </li>
             )

@@ -72,7 +72,8 @@ export default function Home() {
     try {
       const res = await axios({
         method: "GET",
-        url: "/api/content/all-data"
+        url: "/api/content/all-data",
+        headers: { "Cache-Control": "no-cache" }
       })
       setDataAbout(res.data.data.about)
       setDataExperience(res.data.data.experience)
@@ -118,9 +119,9 @@ export default function Home() {
             {loading ?
               <LoaderHeader /> :
               <div>
-                <h1 className="text-3xl sm:text-4xl font-bold">{dataAbout.header}</h1>
+                <h1 className="text-3xl sm:text-5xl font-bold tracking-tight">{dataAbout.header}</h1>
                 <h2 className="text-base sm:text-xl font-medium mt-3">{dataAbout.subheader}</h2>
-                <p className="text-sm sm:text-base text-secondary-text mt-4">{dataAbout.description}</p>
+                <p className="text-sm sm:text-base text-secondary-text mt-4 w-3/5">{dataAbout.description}</p>
               </div>
             }
             <Navigation
@@ -145,14 +146,27 @@ export default function Home() {
             <div className="text-sm sm:text-base text-secondary-text">
               {loading ?
                 <LoaderParagraph /> :
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus fermentum nunc sed tristique. In vitae nibh interdum tellus luctus efficitur. Vivamus sit amet molestie quam. Pellentesque non dui porta, dignissim velit nec, scelerisque massa.</span>
+                <div>
+                  I am a programmer passionate about <span className="text-primary-text">Front-End</span> development,
+                  creating an intuitive and engaging web interfaces that enhance user experience,
+                  responsive, and high-performance web applications that provide a satisfying user journey.
+                  <br /><br />
+                  Currently, I work at <span className="text-primary-text">eBdesk Teknologi</span>,
+                  utilizing <span className="text-primary-text">Vue.js</span> to build dynamic and efficient front-end solutions such as a dashboard page.
+                  I collaborate with the back-end team to integrate API services, ensuring smooth data flow and optimal performance.
+                  <br /><br />
+                  I'm always eager to learn new things, currently I'm learning <span className="text-primary-text">Next.js</span> for full-stack development,
+                  while also learning <span className="text-primary-text">MongoDB</span> for database management. Additionally, I also
+                  love <span className="text-primary-text">design, photography, and videography</span>, which allow me to bring a creative perspective to my projects.
+                  I believe that combining technical expertise with creativity is the key to building innovative and user-friendly digital experiences.
+                </div>
               }
             </div>
             <div className="grid grid-cols-4">
               <div className="col-span-1 flex">
                 <span className="text-sm sm:text-base text-secondary-text">Expertise</span>
               </div>
-              <div className="col-span-3 flex flex-col gap-3">
+              <div className="col-span-3 flex flex-col gap-3 sm:w-3/4">
                 {loading ?
                   <div className="flex flex-col gap-2">
                     {[...Array(3)].map((_, i) => (
@@ -164,9 +178,9 @@ export default function Home() {
                       <span className="text-sm sm:text-base text-primary-text">{item.category}</span>
                       <div>
                         {item.sub_category.map((sub: any, i: number) => (
-                          <div key={i} className="grid grid-cols-2 items-center text-xs sm:text-sm text-secondary-text">
-                            <span>{sub.name}</span>
-                            <div className="w-full">
+                          <div key={i} className="grid grid-cols-5 items-center text-xs sm:text-sm text-secondary-text">
+                            <span className="col-span-2">{sub.name}</span>
+                            <div className="col-span-3 w-full">
                               <ProgressBar
                                 showValue={false}
                                 value={sub.value}
@@ -193,12 +207,12 @@ export default function Home() {
               dataExperience.map((item: any) => (
                 <div key={item._id} className="grid grid-cols-4">
                   <div className="col-span-1 flex">
-                    <span className="text-sm sm:text-base text-secondary-text">{item.year}</span>
+                    <span className="text-xs mt-0.5 sm:mt-0 sm:text-base text-secondary-text">{item.year}</span>
                   </div>
                   <div className="col-span-3 flex flex-col gap-3">
-                    <span className="text-sm sm:text-base text-primary-text">{item.company}</span>
+                    <span className="text-sm sm:text-base text-primary-text">{item.position} · {item.company}</span>
                     <span className="text-xs sm:text-sm text-secondary-text">{item.description}</span>
-                    <div className="flex gap-2">
+                    <div className="flex flex-wrap gap-2">
                       {item.tags.map((tag: any, i: number) => (
                         <Chip
                           key={i}
@@ -211,7 +225,7 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-            <a href="#" target="_blank" className="flex items-end text-sm sm:text-base cursor-pointer text-primary-text hover:text-accent-blue w-fit group">
+            <a href="/resume.pdf" target="_blank" className="flex items-end text-sm sm:text-base cursor-pointer text-primary-text hover:text-accent-blue w-fit group">
               <span>
                 View Full Resume
                 <i className="pi pi-arrow-up-right ml-1 mb-0.5 text-xs transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
