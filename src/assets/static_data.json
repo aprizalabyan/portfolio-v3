@@ -1,0 +1,333 @@
+{
+  "about": {
+    "header": "Aprizal Abyan",
+    "subheader": "Front End Programmer",
+    "description": "Crafting beautiful and responsive web experiences."
+  },
+  "contact": {
+    "email": [
+      {
+        "type": "test type",
+        "title": "test title",
+        "url": "test url"
+      }
+    ],
+    "socmed": [
+      {
+        "type": "test socmed",
+        "title": "test socmed",
+        "url": "test socmed"
+      },
+      {
+        "type": "scomed lagi",
+        "title": "socmed lagi",
+        "url": "socmed lagi"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "_id": "67a6e233b80e7d530f66c9bf",
+      "year": "2023 - Present",
+      "position": "Front End Programmer",
+      "company": "eBdesk Teknologi",
+      "description": "Build, styled, and maintained website for client using Vue.js framework, including make a responsive website. Work with Backend teams to integrated data from API.",
+      "tags": [
+        "HTML & CSS",
+        "Javascript",
+        "Vue",
+        "Nuxt",
+        "Vuetify"
+      ],
+      "inputTag": ""
+    },
+    {
+      "_id": "67a6e198efd531de963b22da",
+      "year": "2021 - 2023",
+      "position": "Content Creator",
+      "company": "Zuna Group Indonesia",
+      "description": "Created photo and video concept for jewelry products, also take and edit to produced content.",
+      "tags": [
+        "Photoshop",
+        "Premiere"
+      ],
+      "inputTag": ""
+    },
+    {
+      "_id": "67a6e198efd531de963b22d9",
+      "year": "2019",
+      "position": "IT Helpdesk",
+      "company": "Kejaksaan Tinggi Yogyakarta",
+      "description": "Troubleshoot and resolve software and hardware end user, also joined with internal IT team to maintain system internal website. My internship program while in college.",
+      "tags": [
+        "IT Support",
+        "Internship"
+      ],
+      "inputTag": ""
+    }
+  ],
+  "expertise": [
+    {
+      "_id": "6765315083bf4d87ce57540a",
+      "category": "Programming Language",
+      "sub_category": [
+        {
+          "name": "HTML, CSS",
+          "value": "90"
+        },
+        {
+          "name": "Javascript",
+          "value": "80"
+        },
+        {
+          "name": "Python",
+          "value": "40"
+        },
+        {
+          "name": "Typescript",
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "_id": "677e5914d07f5b9a37a16694",
+      "category": "Front End Framework",
+      "sub_category": [
+        {
+          "name": "React, Next",
+          "value": "65"
+        },
+        {
+          "name": "Vue, Nuxt",
+          "value": "80"
+        }
+      ]
+    },
+    {
+      "_id": "6780e331ea20eac4ef001bb6",
+      "category": "Backend",
+      "sub_category": [
+        {
+          "name": "Express",
+          "value": "50"
+        },
+        {
+          "name": "Flask",
+          "value": "40"
+        }
+      ]
+    }
+  ],
+  "project": [
+    {
+      "_id": "67a710926d61f8ced3d79af8",
+      "title": "Personal Website V2",
+      "description": "My personal website, build with Next and interactive 3D using Spline.",
+      "url": "https://v2-aprizalabyan.vercel.app/",
+      "year": "2024",
+      "tags": [
+        "Next",
+        "Spline",
+        "Typescript",
+        "Tailwind CSS",
+        "Vercel"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/e9ygcxdkrtunnt1lakxi.png"
+    },
+    {
+      "_id": "67a70ee7b42461e9d4111a3f",
+      "title": "Next MongoDB",
+      "description": "Simple CRUD of fullstack web, build with Next and MongoDB, deployed with Vercel.",
+      "url": "https://nextjs-mongodb-delta.vercel.app/",
+      "year": "2024",
+      "tags": [
+        "Next",
+        "MongoDB",
+        "Typescript",
+        "Tailwind CSS",
+        "Vercel"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739001575/portfolio-media/tcpadmqwyyg4rnlkiyug.png"
+    },
+    {
+      "_id": "67a70ce4dc91f784da6b6a50",
+      "title": "Coolstore - Online Store Template",
+      "description": "An online store landing page template.",
+      "url": "https://aprizalabyan.github.io/coolstore/",
+      "year": "2024",
+      "tags": [
+        "React",
+        "Javascript",
+        "CSS",
+        "Bootstrap"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739001060/portfolio-media/vs67cuedmsevcgswqfe0.jpg"
+    },
+    {
+      "_id": "67a70825bb0bf2a19f16d4d8",
+      "title": "Company Web Template",
+      "description": "A web template for landing page, login and dashboard, that consume dummy API for authentication and data visualization.",
+      "url": "https://aprizalabyan.github.io/login-admin-page/",
+      "year": "2023",
+      "tags": [
+        "Vue",
+        "Javascript",
+        "CSS",
+        "Bootstrap",
+        "Chart.js"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1738999844/portfolio-media/sor30yrv16qdw4tew8px.png"
+    }
+  ],
+  "project-all": [
+    {
+      "id": "67a710926d61f8ced3d79af8",
+      "title": "Personal Website V2",
+      "description": "My personal website, build with Next and interactive 3D using Spline.",
+      "year": "2024",
+      "tags": [
+        "Next",
+        "Spline",
+        "Typescript",
+        "Tailwind CSS",
+        "Vercel"
+      ],
+      "url": "https://v2-aprizalabyan.vercel.app/",
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/e9ygcxdkrtunnt1lakxi.png"
+    },
+    {
+      "id": "67a70ee7b42461e9d4111a3f",
+      "title": "Next MongoDB",
+      "description": "Simple CRUD of fullstack web, build with Next and MongoDB, deployed with Vercel.",
+      "year": "2024",
+      "tags": [
+        "Next",
+        "MongoDB",
+        "Typescript",
+        "Tailwind CSS",
+        "Vercel"
+      ],
+      "url": "https://nextjs-mongodb-delta.vercel.app/",
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739001575/portfolio-media/tcpadmqwyyg4rnlkiyug.png"
+    },
+    {
+      "id": "67a70ce4dc91f784da6b6a50",
+      "title": "Coolstore - Online Store Template",
+      "description": "An online store landing page template.",
+      "year": "2024",
+      "tags": [
+        "React",
+        "Javascript",
+        "CSS",
+        "Bootstrap"
+      ],
+      "url": "https://aprizalabyan.github.io/coolstore/",
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739001060/portfolio-media/vs67cuedmsevcgswqfe0.jpg"
+    },
+    {
+      "id": "67a70825bb0bf2a19f16d4d8",
+      "title": "Company Web Template",
+      "description": "A web template for landing page, login and dashboard, that consume dummy API for authentication and data visualization.",
+      "year": "2023",
+      "tags": [
+        "Vue",
+        "Javascript",
+        "CSS",
+        "Bootstrap",
+        "Chart.js"
+      ],
+      "url": "https://aprizalabyan.github.io/login-admin-page/",
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1738999844/portfolio-media/sor30yrv16qdw4tew8px.png"
+    },
+    {
+      "id": "67a7050e017e9dca956376d0",
+      "title": "Basic Vue Auth",
+      "description": "Basic Vue login authentication using middleware and store encrypted user-data to local storage.",
+      "year": "2023",
+      "tags": [
+        "Vue",
+        "Vuetify",
+        "Javascript",
+        "Crypto.js"
+      ],
+      "url": "https://vue-auth-chi.vercel.app/auth/login",
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1738999054/portfolio-media/pppnylbsbtuboi3by8pe.png"
+    },
+    {
+      "id": "67a702d4bf4a8bb13f8f73c6",
+      "title": "Personal Website V1",
+      "description": "My first personal website, build with React.",
+      "year": "2023",
+      "tags": [
+        "React",
+        "Bootstrap",
+        "Javascript",
+        "HTML",
+        "CSS",
+        "Vercel"
+      ],
+      "url": "https://v1-aprizalabyan.vercel.app/",
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1738998484/portfolio-media/oyefdqpqhaujhvg3lxra.png"
+    },
+    {
+      "id": "67a700124cdc7c57ba6a6f7b",
+      "title": "Jadwal Dokter Online",
+      "description": "An online schedule integrated with Spreadsheet data.",
+      "year": "2023",
+      "tags": [
+        "HTML",
+        "CSS",
+        "React",
+        "Javascript",
+        "Bootstrap",
+        "Spreadsheet API"
+      ],
+      "url": "https://aprizalabyan.github.io/jadwal-dokter/",
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1738997777/portfolio-media/txarvgqnx679vrzhg07h.jpg"
+    },
+    {
+      "id": "67a6fdd06304983f12eb9381",
+      "title": "Contact List - Spreadsheet API",
+      "description": "A simple CRUD contact list, where the data was stored in Spreadsheet.",
+      "year": "2023",
+      "tags": [
+        "React",
+        "Javascript",
+        "Bootstrap",
+        "Spreadsheet API"
+      ],
+      "url": "https://aprizalabyan.github.io/contact-list/",
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1738997199/portfolio-media/la9pyg4x85xusutispac.png"
+    },
+    {
+      "id": "67a6fcef6304983f12eb9380",
+      "title": "Gym Admin Dashboard",
+      "description": "A static admin dashboard, a project for learning route-handler in React",
+      "year": "2023",
+      "tags": [
+        "HTML",
+        "CSS",
+        "React",
+        "Javascript",
+        "Bootstrap"
+      ],
+      "url": "https://aprizalabyan.github.io/e-gym-dashboard/",
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1738996974/portfolio-media/dxpthgjizdabxphiudyf.png"
+    },
+    {
+      "id": "67a6fb4e5b0a9c12efca8a0f",
+      "title": "Lombok Travel",
+      "description": "A static landing page website, first project when learning React framework.",
+      "year": "2023",
+      "tags": [
+        "HTML",
+        "CSS",
+        "React",
+        "Javascript",
+        "Bootstrap"
+      ],
+      "url": "https://aprizalabyan.github.io/lombok-trv/",
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1738996557/portfolio-media/kwqdvh9t6mmfv9ksbucj.png"
+    }
+  ]
+}

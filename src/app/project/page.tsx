@@ -2,11 +2,10 @@
 
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import axios from "axios"
 import { DataTable } from "primereact/datatable"
 import { Column } from "primereact/column"
 import { Chip } from "primereact/chip"
-import LoaderTable from "@/components/base/loader/Table"
+import static_data from "@/assets/static_data.json"
 
 interface Project {
   data: [];
@@ -16,31 +15,6 @@ interface Project {
 
 export default function Project() {
   const router = useRouter()
-
-  const [dataProject, setDataProject] = useState<Project>({
-    data: [],
-    total_items: 0,
-    total_pages: 0
-  })
-  const [loading, setLoading] = useState(true)
-
-  const getDataProject = async () => {
-    setLoading(true)
-    try {
-      const res = await axios({
-        method: "GET",
-        url: "/api/content/project"
-      })
-      setDataProject(res.data.data)
-    } catch (error) {
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  useEffect(() => {
-    getDataProject()
-  }, [])
 
   const titleBodyTemplate = (item: any) => {
     return <div className="flex gap-4 items-center">
@@ -90,15 +64,12 @@ export default function Project() {
           <span className="">Aprizal Abyan</span>
         </div>
         <span className="text-2xl sm:text-3xl font-bold">All Projects</span>
-        {loading ?
-          <LoaderTable /> :
-          <DataTable value={dataProject.data}>
-            <Column field="year" header="Year" style={{ width: "60px" }} className="text-sm text-secondary-text" />
-            <Column field="title" header="Project" body={titleBodyTemplate} className="md:w-1/2 lg:w-2/5" />
-            <Column field="tags" header="Tags" body={tagBodyTemplate} headerClassName="hidden lg:table-cell" className="hidden lg:table-cell" />
-            <Column field="url" header="Link" body={linkBodyTemplate} headerClassName="hidden md:table-cell" className="hidden md:table-cell" />
-          </DataTable>
-        }
+        <DataTable value={static_data["project-all"]}>
+          <Column field="year" header="Year" style={{ width: "60px" }} className="text-sm text-secondary-text" />
+          <Column field="title" header="Project" body={titleBodyTemplate} className="md:w-1/2 lg:w-2/5" />
+          <Column field="tags" header="Tags" body={tagBodyTemplate} headerClassName="hidden lg:table-cell" className="hidden lg:table-cell" />
+          <Column field="url" header="Link" body={linkBodyTemplate} headerClassName="hidden md:table-cell" className="hidden md:table-cell" />
+        </DataTable>
       </div>
     </div>
   );
