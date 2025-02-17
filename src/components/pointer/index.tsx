@@ -19,7 +19,7 @@ export default function Pointer() {
 
   return (
     <div
-      className="fixed inset-0 pointer-events-none transition duration-300 z-10"
+      className="hidden lg:block fixed inset-0 pointer-events-none transition duration-300 z-10"
       style={{
         background: `radial-gradient(600px at ${position.x}px ${position.y}px, rgba(89, 202, 238, 0.04), transparent 80%)`,
       }}

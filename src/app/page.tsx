@@ -100,7 +100,7 @@ export default function Home() {
           </div>
           <div>
             <SplineWidget />
-            <div className="flex gap-5">
+            <div className="flex gap-5 mt-4">
               {contactList.map((item, i) => (
                 <a href={item.url} target="_blank" className="text-xl" key={i}>
                   <i className={"pi " + item.icon}></i>
@@ -111,7 +111,8 @@ export default function Home() {
         </header>
         <main className="right-section flex flex-col pt-24 lg:w-1/2">
           <section id="about" className="flex flex-col gap-16 mb-16 sm:mb-28">
-            <div className="text-sm sm:text-base text-secondary-text">
+            <div className="text-sm sm:text-base text-secondary-text flex flex-col gap-4">
+              <span className="lg:hidden">About</span>
               <div>
                 I am a programmer passionate about <span className="text-primary-text">Front-End</span> development,
                 creating an intuitive and engaging web interfaces that enhance user experience,
@@ -189,14 +190,14 @@ export default function Home() {
             <span className="text-sm sm:text-base text-secondary-text">Projects</span>
             <div className="flex flex-col gap-12 sm:gap-4">
               {static_data.project.map((item: any) => (
-                <div key={item._id} className="grid sm:grid-cols-4 gap-4 sm:gap-0 sm:p-4 hover:bg-hover rounded-md transition-all">
+                <div key={item._id} className="grid sm:grid-cols-4 gap-4 sm:gap-0 sm:p-4 lg:hover:bg-hover rounded-md transition-all">
                   <div className="sm:col-span-3 flex flex-col gap-3 sm:order-2">
                     <a href={item.url} target="_blank" className="text-sm sm:text-base text-primary-text hover:text-accent-blue cursor-pointer w-fit group">
                       {item.title}
                       <i className="pi pi-arrow-up-right text-xs ml-1 mb-0.5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
                     </a>
                     <span className="text-xs sm:text-sm text-secondary-text">{item.description}</span>
-                    <div className="flex gap-2">
+                    <div className="flex flex-wrap gap-2">
                       {item.tags.map((tag: any, i: number) => (
                         <Chip
                           key={i}
