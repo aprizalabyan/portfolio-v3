@@ -181,6 +181,50 @@
   ],
   "project-all": [
     {
+      "_id": "67a710926d61f8ced3d79bk3",
+      "title": "Network Relation Ecosystem (Client)",
+      "description": "Helps contributors assess, schedule, and report network activities with clear, visual-based insights.",
+      "url": "",
+      "year": "2024",
+      "tags": [
+        "Nuxt",
+        "Javascript",
+        "Vuetify",
+        "Echart",
+        "MapboxGL JS"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/qkrznyl6uuqtuour4ufj.png"
+    },
+    {
+      "_id": "67a710926d61f8ced3d794pa",
+      "title": "Cyber Patrol (Client)",
+      "description": "An application for monitoring risks, disasters, and crimes, providing surveillance and alerts to proactively manage and respond to potential threats.",
+      "url": "",
+      "year": "2024",
+      "tags": [
+        "Nuxt",
+        "Javascript",
+        "Vuetify",
+        "Echart",
+        "MapboxGL JS"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/zflhkrjdmjndqqzp8zbe.png"
+    },
+    {
+      "_id": "67a710926d61f8ced3d79jh8",
+      "title": "Profiling & Alerting (Client)",
+      "description": "An application for monitoring and profiling individuals, topics, issues, and brands, providing real-time tracking and alerts for quick, informed responses to key developments.",
+      "url": "",
+      "year": "2024",
+      "tags": [
+        "Nuxt",
+        "Javascript",
+        "Vuetify",
+        "Echart"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/ynthxdvrffwxjspl69mq.png"
+    },
+    {
       "id": "67a710926d61f8ced3d79af8",
       "title": "Personal Website V2",
       "description": "My personal website, build with Next and interactive 3D using Spline.",
@@ -211,6 +255,20 @@
       "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739001575/portfolio-media/tcpadmqwyyg4rnlkiyug.png"
     },
     {
+      "_id": "67a710926d61f8ced3d79sw4",
+      "title": "Pulse (Client)",
+      "description": "An application that displays various kinds of analysis using data based on news and social media platforms.",
+      "url": "",
+      "year": "2023",
+      "tags": [
+        "Vue",
+        "Javascript",
+        "Vuetify",
+        "Echart"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/dfds2li5sqqlt6a9mbgs.png"
+    },
+    {
       "id": "67a70ce4dc91f784da6b6a50",
       "title": "Coolstore - Online Store Template",
       "description": "An online store landing page template.",
@@ -223,6 +281,34 @@
       ],
       "url": "https://aprizalabyan.github.io/coolstore/",
       "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739001060/portfolio-media/vs67cuedmsevcgswqfe0.jpg"
+    },
+    {
+      "_id": "67a710926d61f8ced3d7945t",
+      "title": "B-Hive (Internal)",
+      "description": "Improve responsive view for device mobile. B-Hive is an internal social media, task management and for support internal activity in company.",
+      "url": "",
+      "year": "2023",
+      "tags": [
+        "Vue",
+        "Javascript",
+        "Vuetify"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/rrmlbwr7wtwtzaci5quy.png"
+    },
+    {
+      "_id": "67a710926d61f8ced3d79vb3",
+      "title": "GP4P (Client)",
+      "description": "An application for monitoring and evaluating the campaign process of presidential candidate pairs during the 2024 election.",
+      "url": "",
+      "year": "2023",
+      "tags": [
+        "Vue",
+        "Javascript",
+        "Vuetify",
+        "Echart",
+        "MapboxGL JS"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/oeeyjhm8dteqaqkdtokq.png"
     },
     {
       "id": "67a70825bb0bf2a19f16d4d8",
