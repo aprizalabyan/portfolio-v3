@@ -67,6 +67,7 @@ body {
     table {
       th {
         font-size: 14px;
+        background-color: var(--tw-color, theme("colors.dark-base"));
       }
 
       td,
