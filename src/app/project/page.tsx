@@ -1,9 +1,11 @@
 "use client"
 
+import { useEffect, useState, useRef } from "react"
 import { useRouter } from "next/navigation"
 import { DataTable } from "primereact/datatable"
 import { Column } from "primereact/column"
 import { Chip } from "primereact/chip"
+import { OverlayPanel } from "primereact/overlaypanel"
 import static_data from "@/assets/static_data.json"
 
 interface Project {
@@ -14,10 +16,21 @@ interface Project {
 
 export default function Project() {
   const router = useRouter()
+  const op = useRef<OverlayPanel>(null)
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const titleBodyTemplate = (item: any) => {
-    return <div className="flex gap-4 items-center pe-4">
-      <img src={item.image} alt="img" className="w-[60px] h-[40px] min-w-[60px] object-cover" />
+    return <div className="flex gap-4 items-center pe-4 relative" id={item._id}>
+      <img
+        src={item.image}
+        alt="img"
+        className="project-img w-[60px] h-[40px] min-w-[60px] object-cover cursor-zoom-in"
+        onMouseEnter={(e) => {
+          setSelectedImage(item.image)
+          op.current?.toggle(e)
+        }}
+        onMouseLeave={() => op.current?.hide()}
+      />
       <div className="flex flex-col">
         <span className="text-sm hidden md:block">{item.title}</span>
         {item.url !== "" ?
@@ -29,6 +42,10 @@ export default function Project() {
         }
         <span className="text-xs text-secondary-text hidden md:block">{item.description}</span>
       </div>
+
+      <OverlayPanel ref={op} className="shadow-md shadow-black">
+        {selectedImage && <img className="h-[300px]" src={selectedImage} alt="img" />}
+      </OverlayPanel>
     </div>
   }
 

@@ -182,7 +182,7 @@
   "project-all": [
     {
       "_id": "67a710926d61f8ced3d79bk3",
-      "title": "Network Relation Ecosystem (Client)",
+      "title": "Network Relation Ecosystem (eBdesk Client's)",
       "description": "Helps contributors assess, schedule, and report network activities with clear, visual-based insights.",
       "url": "",
       "year": "2024",
@@ -197,7 +197,7 @@
     },
     {
       "_id": "67a710926d61f8ced3d794pa",
-      "title": "Cyber Patrol (Client)",
+      "title": "Cyber Patrol (eBdesk Client's)",
       "description": "An application for monitoring risks, disasters, and crimes, providing surveillance and alerts to proactively manage and respond to potential threats.",
       "url": "",
       "year": "2024",
@@ -212,7 +212,7 @@
     },
     {
       "_id": "67a710926d61f8ced3d79jh8",
-      "title": "Profiling & Alerting (Client)",
+      "title": "Profiling & Alerting (eBdesk Client's)",
       "description": "An application for monitoring and profiling individuals, topics, issues, and brands, providing real-time tracking and alerts for quick, informed responses to key developments.",
       "url": "",
       "year": "2024",
@@ -256,7 +256,7 @@
     },
     {
       "_id": "67a710926d61f8ced3d79sw4",
-      "title": "Pulse (Client)",
+      "title": "Pulse (eBdesk Client's)",
       "description": "An application that displays various kinds of analysis using data based on news and social media platforms.",
       "url": "",
       "year": "2023",
@@ -284,7 +284,7 @@
     },
     {
       "_id": "67a710926d61f8ced3d7945t",
-      "title": "B-Hive (Internal)",
+      "title": "B-Hive (eBdesk Internal's)",
       "description": "Improve responsive view for device mobile. B-Hive is an internal social media, task management and for support internal activity in company.",
       "url": "",
       "year": "2023",
@@ -297,7 +297,7 @@
     },
     {
       "_id": "67a710926d61f8ced3d79vb3",
-      "title": "GP4P (Client)",
+      "title": "GP4P (eBdesk Client's)",
       "description": "An application for monitoring and evaluating the campaign process of presidential candidate pairs during the 2024 election.",
       "url": "",
       "year": "2023",
