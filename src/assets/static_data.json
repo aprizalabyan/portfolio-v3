@@ -35,6 +35,7 @@
       "tags": [
         "HTML & CSS",
         "Javascript",
+        "Typescript",
         "Vue",
         "Nuxt",
         "Vuetify"
@@ -180,6 +181,20 @@
     }
   ],
   "project-all": [
+    {
+      "_id": "67a710926d61f8ced3d79op1",
+      "title": "Ascendio (eBdesk Client's)",
+      "description": "Artificial Intelligence (AI) based digital platform designed for human resource (HR) and organizational capacity development.",
+      "url": "https://ascendio.sekota.id",
+      "year": "2025",
+      "tags": [
+        "Nuxt",
+        "Typescript",
+        "Vuetify",
+        "Echart"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1756101311/Ascendio_yd3367.png"
+    },
     {
       "_id": "67a710926d61f8ced3d79bk3",
       "title": "Network Relation Ecosystem (eBdesk Client's)",
