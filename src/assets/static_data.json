@@ -1,7 +1,7 @@
 {
   "about": {
     "header": "Aprizal Abyan",
-    "subheader": "Front End Programmer",
+    "subheader": "Frontend Engineer",
     "description": "Crafting beautiful and responsive web experiences."
   },
   "contact": {
@@ -29,9 +29,9 @@
     {
       "_id": "67a6e233b80e7d530f66c9bf",
       "year": "2023 - Present",
-      "position": "Front End Programmer",
+      "position": "Front End Developer",
       "company": "eBdesk Teknologi",
-      "description": "Build, styled, and maintained website for client using Vue.js framework, including make a responsive website. Work with Backend teams to integrated data from API.",
+      "description": "Build, styled, and maintain website for client using Vue.js framework, including make a responsive website. Work with Backend teams to integrated data from API.",
       "tags": [
         "HTML & CSS",
         "Javascript",
@@ -95,12 +95,12 @@
       "category": "Front End Framework",
       "sub_category": [
         {
-          "name": "React, Next",
-          "value": "65"
+          "name": "Vue/Nuxt",
+          "value": "80"
         },
         {
-          "name": "Vue, Nuxt",
-          "value": "80"
+          "name": "React/Next",
+          "value": "65"
         }
       ]
     },
@@ -115,6 +115,20 @@
         {
           "name": "Flask",
           "value": "40"
+        },
+        {
+          "name": "MongoDB",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "_id": "6780e331ea20eac4ef001ca2",
+      "category": "Others",
+      "sub_category": [
+        {
+          "name": "Spline 3D",
+          "value": "80"
         }
       ]
     }
@@ -136,6 +150,22 @@
       "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/e9ygcxdkrtunnt1lakxi.png"
     },
     {
+      "_id": "67a710926d61f8ced3d79s4d",
+      "title": "Dashboard Starter Kit - Vue 3",
+      "description": "A starter / base project for building modern dashboards using Vue 3 + TypeScript + Vuetify 3.",
+      "url": "https://dashboard-starter-kit-vue-3.vercel.app/",
+      "year": "2025",
+      "tags": [
+        "Vue",
+        "Typescript",
+        "Vuetify",
+        "Echart",
+        "MapboxGL JS",
+        "Pinia"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1761881621/Vue_3_Dashboard_Kit_suj3az.png"
+    },
+    {
       "_id": "67a70ee7b42461e9d4111a3f",
       "title": "Next MongoDB",
       "description": "Simple CRUD of fullstack web, build with Next and MongoDB, deployed with Vercel.",
@@ -149,20 +179,6 @@
         "Vercel"
       ],
       "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739001575/portfolio-media/tcpadmqwyyg4rnlkiyug.png"
-    },
-    {
-      "_id": "67a70ce4dc91f784da6b6a50",
-      "title": "Coolstore - Online Store Template",
-      "description": "An online store landing page template.",
-      "url": "https://aprizalabyan.github.io/coolstore/",
-      "year": "2024",
-      "tags": [
-        "React",
-        "Javascript",
-        "CSS",
-        "Bootstrap"
-      ],
-      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739001060/portfolio-media/vs67cuedmsevcgswqfe0.jpg"
     },
     {
       "_id": "67a70825bb0bf2a19f16d4d8",
@@ -194,6 +210,22 @@
         "Echart"
       ],
       "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1756101311/Ascendio_yd3367.png"
+    },
+    {
+      "_id": "67a710926d61f8ced3d79s4d",
+      "title": "Dashboard Starter Kit - Vue 3",
+      "description": "A starter / base project for building modern dashboards using Vue 3 + TypeScript + Vuetify 3.",
+      "url": "https://dashboard-starter-kit-vue-3.vercel.app/",
+      "year": "2025",
+      "tags": [
+        "Vue",
+        "Typescript",
+        "Vuetify",
+        "Echart",
+        "MapboxGL JS",
+        "Pinia"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1761881621/Vue_3_Dashboard_Kit_suj3az.png"
     },
     {
       "_id": "67a710926d61f8ced3d79bk3",
