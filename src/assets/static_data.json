@@ -31,14 +31,16 @@
       "year": "2023 - Present",
       "position": "Front End Developer",
       "company": "eBdesk Teknologi",
-      "description": "Build, styled, and maintain website for client using Vue.js framework, including make a responsive website. Work with Backend teams to integrated data from API.",
+      "description": "Build, styled, and maintain web applications using Vue.js framework, including make a responsive website. Work with Backend teams to integrated data from API.",
       "tags": [
         "HTML & CSS",
         "Javascript",
         "Typescript",
         "Vue",
         "Nuxt",
-        "Vuetify"
+        "Vuetify",
+        "MapboxGL JS",
+        "Echart"
       ],
       "inputTag": ""
     },
@@ -101,6 +103,18 @@
         {
           "name": "React/Next",
           "value": "65"
+        },
+        {
+          "name": "Material UI",
+          "value": "65"
+        },
+        {
+          "name": "Tailwind",
+          "value": "65"
+        },
+        {
+          "name": "Vuetify",
+          "value": "65"
         }
       ]
     },
@@ -113,11 +127,15 @@
           "value": "50"
         },
         {
-          "name": "Flask",
+          "name": "FastAPI",
           "value": "40"
         },
         {
           "name": "MongoDB",
+          "value": "40"
+        },
+        {
+          "name": "Docker",
           "value": "40"
         }
       ]
@@ -128,6 +146,14 @@
       "sub_category": [
         {
           "name": "Spline 3D",
+          "value": "80"
+        },
+        {
+          "name": "MapboxGL",
+          "value": "80"
+        },
+        {
+          "name": "Echart",
           "value": "80"
         }
       ]
@@ -150,6 +176,35 @@
       "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/e9ygcxdkrtunnt1lakxi.png"
     },
     {
+      "_id": "67a710926d61f8ced3d79op1",
+      "title": "Ascendio (eBdesk Client's)",
+      "description": "Artificial Intelligence (AI) based digital platform designed for human resource (HR) and organizational capacity development.",
+      "url": "https://ascendio.sekota.id",
+      "year": "2025",
+      "tags": [
+        "Nuxt",
+        "Typescript",
+        "Vuetify",
+        "Echart"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1756101311/Ascendio_yd3367.png"
+    },
+    {
+      "_id": "69fg0ee7b42461e9d4111app",
+      "title": "Product Review App",
+      "description": "REST API for product reviews, built with FastAPI, MongoDB, and JWT authentication. Users can login and manage products with review functionality.",
+      "url": "https://product-review-web.vercel.app/",
+      "year": "2025",
+      "tags": [
+        "React",
+        "FastAPI",
+        "MongoDB",
+        "Python",
+        "Javascript"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1767088388/Product_Review_cwmdxj.png"
+    },
+    {
       "_id": "67a710926d61f8ced3d79s4d",
       "title": "Dashboard Starter Kit - Vue 3",
       "description": "A starter / base project for building modern dashboards using Vue 3 + TypeScript + Vuetify 3.",
@@ -164,39 +219,24 @@
         "Pinia"
       ],
       "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1761881621/Vue_3_Dashboard_Kit_suj3az.png"
-    },
-    {
-      "_id": "67a70ee7b42461e9d4111a3f",
-      "title": "Next MongoDB",
-      "description": "Simple CRUD of fullstack web, build with Next and MongoDB, deployed with Vercel.",
-      "url": "https://nextjs-mongodb-delta.vercel.app/",
-      "year": "2024",
-      "tags": [
-        "Next",
-        "MongoDB",
-        "Typescript",
-        "Tailwind CSS",
-        "Vercel"
-      ],
-      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739001575/portfolio-media/tcpadmqwyyg4rnlkiyug.png"
-    },
-    {
-      "_id": "67a70825bb0bf2a19f16d4d8",
-      "title": "Company Web Template",
-      "description": "A web template for landing page, login and dashboard, that consume dummy API for authentication and data visualization.",
-      "url": "https://aprizalabyan.github.io/login-admin-page/",
-      "year": "2023",
-      "tags": [
-        "Vue",
-        "Javascript",
-        "CSS",
-        "Bootstrap",
-        "Chart.js"
-      ],
-      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1738999844/portfolio-media/sor30yrv16qdw4tew8px.png"
     }
   ],
   "project-all": [
+    {
+      "_id": "69fg0ee7b42461e9d4111app",
+      "title": "Product Review App",
+      "description": "REST API for product reviews, built with FastAPI, MongoDB, and JWT authentication. Users can login and manage products with review functionality.",
+      "url": "https://product-review-web.vercel.app/",
+      "year": "2025",
+      "tags": [
+        "React",
+        "FastAPI",
+        "MongoDB",
+        "Python",
+        "Javascript"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1767088388/Product_Review_cwmdxj.png"
+    },
     {
       "_id": "67a710926d61f8ced3d79op1",
       "title": "Ascendio (eBdesk Client's)",
@@ -210,6 +250,19 @@
         "Echart"
       ],
       "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1756101311/Ascendio_yd3367.png"
+    },
+    {
+      "_id": "63h510926d61f8ced3d79i92",
+      "title": "Poke Co",
+      "description": "Simple web to implement api from pokeapi.co and handle pagination.",
+      "url": "https://poke-co.vercel.app/",
+      "year": "2025",
+      "tags": [
+        "Nuxt",
+        "Typescript",
+        "Vuetify"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1767089437/Poke_Co_pcqebd.png"
     },
     {
       "_id": "67a710926d61f8ced3d79s4d",
@@ -316,20 +369,6 @@
       "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/dfds2li5sqqlt6a9mbgs.png"
     },
     {
-      "id": "67a70ce4dc91f784da6b6a50",
-      "title": "Coolstore - Online Store Template",
-      "description": "An online store landing page template.",
-      "year": "2024",
-      "tags": [
-        "React",
-        "Javascript",
-        "CSS",
-        "Bootstrap"
-      ],
-      "url": "https://aprizalabyan.github.io/coolstore/",
-      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739001060/portfolio-media/vs67cuedmsevcgswqfe0.jpg"
-    },
-    {
       "_id": "67a710926d61f8ced3d7945t",
       "title": "B-Hive (eBdesk Internal's)",
       "description": "Improve responsive view for device mobile. B-Hive is an internal social media, task management and for support internal activity in company.",
@@ -385,6 +424,20 @@
       ],
       "url": "https://vue-auth-chi.vercel.app/auth/login",
       "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1738999054/portfolio-media/pppnylbsbtuboi3by8pe.png"
+    },
+    {
+      "id": "67a70ce4dc91f784da6b6a50",
+      "title": "Coolstore - Online Store Template",
+      "description": "An online store landing page template.",
+      "year": "2023",
+      "tags": [
+        "React",
+        "Javascript",
+        "CSS",
+        "Bootstrap"
+      ],
+      "url": "https://aprizalabyan.github.io/coolstore/",
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739001060/portfolio-media/vs67cuedmsevcgswqfe0.jpg"
     },
     {
       "id": "67a702d4bf4a8bb13f8f73c6",
