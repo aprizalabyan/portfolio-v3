@@ -27,11 +27,29 @@
   },
   "experience": [
     {
+      "_id": "67a6e233b80e7d530f66cj64",
+      "year": "2026 - Present",
+      "position": "Front End Developer",
+      "company": "NTI",
+      "description": "Develop and maintain modern web applications using React and TypeScript, focusing on responsive interfaces, reusable components, and efficient data management. Collaborate with Backend teams to integrate APIs and build reliable data-driven features, including dashboards, data visualization, form validation, and secure authentication with Azure MSAL.",
+      "tags": [
+        "HTML & CSS",
+        "Typescript",
+        "React",
+        "Tanstack Query",
+        "Tailwind CSS",
+        "Recharts",
+        "Zod",
+        "Azure MSAL"
+      ],
+      "inputTag": ""
+    },
+    {
       "_id": "67a6e233b80e7d530f66c9bf",
-      "year": "2023 - Present",
+      "year": "2023 - 2026",
       "position": "Front End Developer",
       "company": "eBdesk Teknologi",
-      "description": "Build, styled, and maintain web applications using Vue.js framework, including make a responsive website. Work with Backend teams to integrated data from API.",
+      "description": "Developed and maintained web applications using Vue.js and Nuxt, building responsive and interactive interfaces tailored to different user needs. Worked closely with Backend teams to integrate APIs and transform data into intuitive user experiences, including map-based features and data visualizations using Mapbox GL JS and ECharts.",
       "tags": [
         "HTML & CSS",
         "Javascript",
@@ -49,10 +67,10 @@
       "year": "2021 - 2023",
       "position": "Content Creator",
       "company": "Zuna Group Indonesia",
-      "description": "Created photo and video concept for jewelry products, also take and edit to produced content.",
+      "description": "Created visual concepts and multimedia content for jewelry products, from planning and photography to video production and post-production. Focused on presenting products through engaging visuals that aligned with the brand's style and marketing needs.",
       "tags": [
-        "Photoshop",
-        "Premiere"
+        "Adobe Photoshop",
+        "Adobe Premiere"
       ],
       "inputTag": ""
     },
@@ -61,7 +79,7 @@
       "year": "2019",
       "position": "IT Helpdesk",
       "company": "Kejaksaan Tinggi Yogyakarta",
-      "description": "Troubleshoot and resolve software and hardware end user, also joined with internal IT team to maintain system internal website. My internship program while in college.",
+      "description": "Provided technical support for hardware and software issues, helping end users troubleshoot and resolve day-to-day technical problems. Assisted the internal IT team in maintaining the organization's internal website and supporting IT operations during an internship program.",
       "tags": [
         "IT Support",
         "Internship"
@@ -83,18 +101,18 @@
           "value": "80"
         },
         {
-          "name": "Python",
-          "value": "40"
-        },
-        {
           "name": "Typescript",
           "value": "60"
+        },
+        {
+          "name": "Python",
+          "value": "40"
         }
       ]
     },
     {
       "_id": "677e5914d07f5b9a37a16694",
-      "category": "Front End Framework",
+      "category": "Frontend",
       "sub_category": [
         {
           "name": "Vue/Nuxt",
@@ -109,7 +127,15 @@
           "value": "65"
         },
         {
+          "name": "Ant Design",
+          "value": "65"
+        },
+        {
           "name": "Tailwind",
+          "value": "65"
+        },
+        {
+          "name": "Tanstack",
           "value": "65"
         },
         {
@@ -135,6 +161,10 @@
           "value": "40"
         },
         {
+          "name": "Postgresql",
+          "value": "40"
+        },
+        {
           "name": "Docker",
           "value": "40"
         }
@@ -155,11 +185,31 @@
         {
           "name": "Echart",
           "value": "80"
+        },
+        {
+          "name": "Recharts",
+          "value": "80"
         }
       ]
     }
   ],
   "project": [
+    {
+      "_id": "69fg0ee7b42461e9d4008g23",
+      "title": "Cash Book",
+      "description": "Personal finance dashboard for tracking income, expenses, transactions, and financial goals. Built with Next.js and Material UI, with a FastAPI backend and Google Sheets for data storage.",
+      "url": "",
+      "year": "2026",
+      "tags": [
+        "Next.js",
+        "Material UI",
+        "ECharts",
+        "Python",
+        "FastAPI",
+        "Google Sheets"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1786279524/cash-book_vxku7f.png"
+    },
     {
       "_id": "67a710926d61f8ced3d79af8",
       "title": "Personal Website V2",
@@ -174,20 +224,6 @@
         "Vercel"
       ],
       "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1739002002/portfolio-media/e9ygcxdkrtunnt1lakxi.png"
-    },
-    {
-      "_id": "67a710926d61f8ced3d79op1",
-      "title": "Ascendio (eBdesk Client's)",
-      "description": "Artificial Intelligence (AI) based digital platform designed for human resource (HR) and organizational capacity development.",
-      "url": "https://ascendio.sekota.id",
-      "year": "2025",
-      "tags": [
-        "Nuxt",
-        "Typescript",
-        "Vuetify",
-        "Echart"
-      ],
-      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1756101311/Ascendio_yd3367.png"
     },
     {
       "_id": "69fg0ee7b42461e9d4111app",
@@ -222,6 +258,38 @@
     }
   ],
   "project-all": [
+    {
+      "_id": "69fg0ee7b42461e9d4gj96gt",
+      "title": "AI Marketplace Platform",
+      "description": "AI-powered marketplace platform developed for an enterprise client. Built with React and TypeScript, integrated API-driven features, and implemented data visualization.",
+      "url": "",
+      "year": "2026",
+      "tags": [
+        "React",
+        "Typescript",
+        "Tanstack Query",
+        "Tailwind CSS",
+        "Recharts",
+        "Zod"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1786278301/no-image_li8e30.jpg"
+    },
+    {
+      "_id": "69fg0ee7b42461e9d4008g23",
+      "title": "Cash Book",
+      "description": "Personal finance dashboard for tracking income, expenses, transactions, and financial goals. Built with Next.js and Material UI, with a FastAPI backend and Google Sheets for data storage.",
+      "url": "",
+      "year": "2026",
+      "tags": [
+        "Next.js",
+        "Material UI",
+        "ECharts",
+        "Python",
+        "FastAPI",
+        "Google Sheets"
+      ],
+      "image": "https://res.cloudinary.com/dvphhv2rg/image/upload/v1786279524/cash-book_vxku7f.png"
+    },
     {
       "_id": "69fg0ee7b42461e9d4111app",
       "title": "Product Review App",

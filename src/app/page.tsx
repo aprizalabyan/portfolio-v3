@@ -69,7 +69,7 @@ export default function Home() {
           }
         });
       },
-      { threshold: 1 }
+      { threshold: 1 },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -121,32 +121,27 @@ export default function Home() {
             <div className="text-sm sm:text-base text-secondary-text flex flex-col gap-4">
               <span className="lg:hidden">About</span>
               <div>
-                I am a developer passionate about{" "}
-                <span className="text-primary-text">Front-End</span>{" "}
-                development, creating an intuitive and engaging web interfaces
-                that enhance user experience, responsive, and high-performance
-                web applications that provide a satisfying user journey.
+                I am a Front-End Developer passionate about building intuitive,
+                responsive, and high-performance web applications that deliver
+                engaging user experiences. I enjoy turning ideas and designs
+                into clean, functional interfaces while focusing on usability,
+                performance, and maintainable code.
                 <br />
+                <br />I mainly work with{" "}
+                <span className="text-primary-text">Vue</span> and{" "}
+                <span className="text-primary-text">React</span> to build modern
+                web applications, working with APIs and creating responsive,
+                data-driven interfaces. I enjoy exploring different tools and
+                technologies to find practical solutions and continuously
+                improve the way I build applications.
                 <br />
-                Currently, I work at{" "}
-                <span className="text-primary-text">eBdesk Teknologi</span>,
-                mainly using <span className="text-primary-text">Vue/Nuxt</span>{" "}
-                to build dynamic and efficient front-end solutions such as a
-                dashboard page. I collaborate with the back-end team to
-                integrate API services, ensuring smooth data flow and optimal
-                performance.
-                <br />
-                <br />
-                I'm always eager to learn new things, in my personal time,
-                currently I'm learning{" "}
-                <span className="text-primary-text">React/Next</span> to expand
-                my front-end skills. And also learning back-end with{" "}
+                <br />I am also exploring{" "}
                 <span className="text-primary-text">Python</span> and{" "}
-                <span className="text-primary-text">MongoDB</span> for database
-                management, to become a well-rounded developer.
-                {/* Additionally, I also
-                love <span className="text-primary-text">design, photography, and videography</span>, which allow me to bring a creative perspective to my projects.
-                I believe that combining technical expertise with creativity is the key to building innovative and user-friendly digital experiences. */}
+                <span className="text-primary-text">FastAPI</span> to broaden my
+                development skills beyond the frontend. For me, building
+                projects is not only about writing code, but also about
+                continuously learning, experimenting, and finding better ways to
+                solve problems.
               </div>
             </div>
             <div className="grid grid-cols-4">
@@ -250,14 +245,20 @@ export default function Home() {
                   className="grid sm:grid-cols-4 gap-4 sm:gap-0 sm:p-4 lg:hover:bg-hover rounded-md transition-all"
                 >
                   <div className="sm:col-span-3 flex flex-col gap-3 sm:order-2">
-                    <a
-                      href={item.url}
-                      target="_blank"
-                      className="text-sm sm:text-base text-primary-text hover:text-accent-blue cursor-pointer w-fit group"
-                    >
-                      {item.title}
-                      <i className="pi pi-arrow-up-right text-xs ml-1 mb-0.5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
-                    </a>
+                    {item.url !== "" ? (
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        className="text-sm sm:text-base text-primary-text hover:text-accent-blue cursor-pointer w-fit group"
+                      >
+                        {item.title}
+                        <i className="pi pi-arrow-up-right text-xs ml-1 mb-0.5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
+                      </a>
+                    ) : (
+                      <span className="text-sm sm:text-base text-primary-text">
+                        {item.title}
+                      </span>
+                    )}
                     <span className="text-xs sm:text-sm text-secondary-text">
                       {item.description}
                     </span>
